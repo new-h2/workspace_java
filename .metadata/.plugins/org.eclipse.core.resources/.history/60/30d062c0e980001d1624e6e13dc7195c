@@ -1,0 +1,11 @@
+package chap15;
+
+public class SystemInTest {
+
+	public static void main(String[] args) {
+		int data  = System.in.read();
+		//모든 IOException 
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+<<<<<<< HEAD
+	<name>chap5</name>
+=======
+<<<<<<< HEAD
+	<name>chap7</name>
+=======
+	<name>chap6</name>
+>>>>>>> branch 'master' of https://github.com/new-h2/sessac.git
+>>>>>>> branch 'master' of https://github.com/new-h2/sessac.git
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.jdt.core.javabuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.jdt.core.javanature</nature>
+	</natures>
+</projectDescription>

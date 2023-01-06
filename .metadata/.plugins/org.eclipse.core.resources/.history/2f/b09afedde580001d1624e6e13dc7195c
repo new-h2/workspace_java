@@ -1,0 +1,50 @@
+package chap15;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class BufferedInTest {
+
+	public static void main(String[] args) {
+		FileInputStream fis= null;
+		try {
+			// '\' 특수문자 => \\
+			// \n \u0000 \t
+
+			// windows경로 
+			// linux /
+
+			
+			// \\C:\sba\workspace_java\chap15\src\chap15
+			
+			fis = new FileInputStream("src\\chap15\\FileViewer.java"); //현재자바프로젝트기준
+//			FileInputStream fis = new FileInputStream("C:\\Users\\user\\Desktop\\abstract.txt"); 절대경로
+//			FileReader fis = new FileReader("C:\\Users\\user\\Desktop\\abstract.txt");
+			// inputStream은 한글 다깨짐 1바이트인데, 한글은 2바이트이상이여서 깨져서나옴
+			// FileReader로 읽었더니 한글로 나옴
+			
+			while (true) {
+				int data = fis.read(); // int 4바이트중 1바이트 활용
+				if (data == -1) {
+					break;
+				}
+				System.out.print((char)data); // 파일 입력내용 모니터출력 
+				//숫자로 나옴 
+			}
+//		} catch (FileNotFoundException e) {//Io자식클래스여서 IO만해도됨
+//			System.out.println("해당파일은 존재하지 않습니다.");
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("해당파일은 존재하지 않습니다.");
+		}finally{
+			try {
+				fis.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

@@ -1,0 +1,10 @@
+package member_crud;
+
+public class deleteMemberView implements View{
+
+	@Override
+	public void input() {
+		
+	}
+	
+}

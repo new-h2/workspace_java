@@ -1,0 +1,24 @@
+package chap15;
+
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class BufferedInTest {
+//Buffered xxx <-메모리복사-> 원본
+//입출력 속도개선 
+	public static void main(String[] args) throws IOException {
+		FileReader fis = new FileReader("src\\chap15\\FileViewer.java");
+		BufferedReader br = new BufferedReader(fis, 10); //
+
+		while (true) {
+			int data = br.read();
+			if (data == -1) { break; }
+			System.out.print((char) data);
+		}
+		br.close();
+	}
+
+}

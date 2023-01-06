@@ -1,0 +1,11 @@
+package book;
+
+public class BookDAO {
+	public void insertBook(BookDTO bookDTO) {
+		// book 테이블에 데이터 저장
+	}
+	public void selectBook() {
+		//book 테이블에 있는 모든 데이터 출력
+	}
+
+}

@@ -1,0 +1,9 @@
+package book;
+
+import java.util.Date;
+
+public class BookDTO {
+	String bookNo, bookTitle, bookAuthor, bookPublisher;
+	Date bookTime;
+	int bookPrice; 
+}

@@ -1,0 +1,13 @@
+package chap15;
+
+import java.io.IOException;
+
+public class SystemInTest {
+
+	public static void main(String[] args) throws IOException {
+		int data  = System.in.read();
+		//모든 IOException 처리
+		
+	}
+
+}

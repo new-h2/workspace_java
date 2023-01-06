@@ -1,0 +1,16 @@
+package chap15;
+
+import java.io.IOException;
+
+public class SystemInTest {
+
+	public static void main(String[] args) throws IOException {
+		//모든 IOException 처리
+		//콘솔창에 입력+ 엔터가능
+		int data  = System.in.read();
+		int data2  = System.in.read();
+		int data3  = System.in.read();
+		
+	}
+
+}

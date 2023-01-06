@@ -1,0 +1,28 @@
+package chap15;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileCopy {
+// 1. 입력파일 없는 오류 
+// 2. 출력파일없으면 copy.txt 자동생성
+// 3. 자동 파일생성 - refresh 
+	
+	//C:\sba\workspace_java\chap15\src\chap15\FileCopy.java
+	
+	public static void main(String[] args) throws IOException {
+			FileInputStream fis = new FileInputStream(args[0]);
+			FileOutputStream fos = new FileOutputStream(args[1]);
+			while (true) {
+				int data = fis.read(); 
+				if (data == -1)	break;
+				fos.write(data);
+			}
+				fis.close();
+				fos.close();
+	}
+
+}

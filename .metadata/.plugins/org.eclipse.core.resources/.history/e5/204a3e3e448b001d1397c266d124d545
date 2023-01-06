@@ -1,0 +1,23 @@
+package book;
+
+public class BookTest {
+	
+	
+	// new BookDAO.insertBook();
+	// B004 자바스크립트 강길동 2020 28000 새싹출판사
+	
+	Book booklist[] = new Book[4];
+			
+	Book book1 = new Book("BOO1 ","자바프로그래밍	","홍길동	", "2021	","30000	","서울출판사");
+	Book book2  = new Book("BOO2 ","데이터베이스	","이몽룡	", "2020	","25000	","대한출판사");
+	Book book3 = new Book("BOO3 ","HTML/CSS	","성춘향	", "2022	","18000	","민국출판사");
+	Book book4 = new Book("BOO4 ","자바스크립트	","강길동	", "2020	","28000	","새싹출판사");
+	
+	booklist[0] = book1;
+	booklist[1] = book2;
+	booklist[2] = book3;
+	booklist[3] = book4;
+	
+	new BookDAO.selectBook();
+	 
+}}

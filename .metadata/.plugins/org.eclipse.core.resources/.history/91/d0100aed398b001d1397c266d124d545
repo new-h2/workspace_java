@@ -1,0 +1,10 @@
+package book;
+
+public class BookEx {
+	public static void main(String[] args) {
+//		- Book, Magazine 클래스 객체 6개를 저장한 배열 생성
+//		- 아래 그림과 같이 값을 저장하여 초기화
+//		- 아래 그림과 같이 데이터 출력
+	}
+
+}

@@ -1,0 +1,33 @@
+package chap15;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class FileCopy {
+// 1. 입력
+	public static void main(String[] args) {
+		FileInputStream fis= null;
+		try {
+			fis = new FileInputStream("src\\chap15\\FileViewer.java"); //현재자바프로젝트기준
+			while (true) {
+				int data = fis.read(); // int 4바이트중 1바이트 활용
+				if (data == -1) {
+					break;
+				}
+				System.out.print((char)data); // 파일 입력내용 모니터출력 
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+			System.out.println("해당파일은 존재하지 않습니다.");
+		}finally{
+			try {
+				fis.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

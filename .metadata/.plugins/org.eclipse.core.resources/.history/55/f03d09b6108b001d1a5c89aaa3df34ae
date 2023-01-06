@@ -1,0 +1,14 @@
+package member_crud;
+
+public class MemberUpdateView implements  View{
+
+	@Override
+	public void input() {
+		OneSelectView view = new OneSelectView();
+		MemberDTO dto = view.getDto();
+		
+		
+	}
+	
+	
+}

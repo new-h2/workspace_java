@@ -1,0 +1,21 @@
+package book;
+
+public class Magazine extends Book {
+	String month;
+
+	public Magazine(String month) {
+		super();
+		this.month = month;
+	}
+
+	public Magazine() {
+	}
+
+	@Override
+	public String toString() {
+		return "Magazine [month=" + month + "]";
+	}
+	
+	
+	
+}

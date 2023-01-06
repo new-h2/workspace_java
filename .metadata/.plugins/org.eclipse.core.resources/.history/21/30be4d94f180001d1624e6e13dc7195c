@@ -1,0 +1,25 @@
+package chap15;
+
+import java.util.Scanner;
+
+public class Calculator {
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int first;
+		int second;
+		
+		System.out.print("계산기를 시작합니다 \n 종료하려면 5를 입력하세요. \n 메뉴 \n1. 덧셈 \r\n"
+				+ "2. 뺄셈 \r\n"
+				+ "3. 곱셈 \r\n"
+				+ "4. 나눗셈 \r\n"
+				+ "5. 프로그램 종료 ");
+		
+		
+		
+		while(sc.hasNextInt()) {
+			
+		}
+		
+	}
+}
